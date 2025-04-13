@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 # Install rsync and cron
 RUN apt-get update && \
