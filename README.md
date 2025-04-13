@@ -1,4 +1,4 @@
-# How to use:
+# How to use the Docker image:
 
 ```
 docker run -d \
@@ -7,5 +7,4 @@ docker run -d \
   -e TARGET_FOLDER=/data/target \
   -v /path/on/host/source:/data/source \
   -v /path/on/host/target:/data/target \
-  folder-sync
-```
+  angercraft/rsync-service:latest
