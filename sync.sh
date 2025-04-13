@@ -19,7 +19,7 @@ touch "$LOCKFILE"
 log "Starting sync from $SOURCE_FOLDER to $TARGET_FOLDER"
 
 # Perform sync
-rsync -ah --info=progress2 --ignore-existing "$SOURCE_FOLDER/" "$TARGET_FOLDER/"
+rsync -ah --info=progress2 --ignore-existing "$SOURCE_FOLDER/" "$TARGET_FOLDER/" 2>&1
 
 log "Sync completed."
 
