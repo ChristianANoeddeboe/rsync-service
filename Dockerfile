@@ -17,3 +17,5 @@ RUN chmod +x /app/sync.sh && crontab /app/crontab.txt
 
 # # Run cron in foreground
 # CMD ["cron", "-f"]
+# Run the sync script directly
+CMD ["/bin/bash", "-c", "/app/sync.sh"]
