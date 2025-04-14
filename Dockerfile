@@ -15,5 +15,5 @@ COPY crontab.txt /app/crontab.txt
 # Make the script executable
 RUN chmod +x /app/sync.sh && crontab /app/crontab.txt
 
-# Run cron in foreground
-CMD ["cron", "-f"]
+# # Run cron in foreground
+# CMD ["cron", "-f"]
